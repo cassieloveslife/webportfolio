@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:200,300,400,600');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1.5;
+
+}
+.header{
+   
+    background-image: url("../images/main-banner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    position: relative;
+    color:white;
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navigation ul{
+    padding: 0;
+}
+.navigation li a{
+    display: block;
+    width: 100%;
+    background-color: #444444;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    border: 1px solid #363636; 
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+/* Add a grey background color on mouse-over */
+.navigation a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+
+h2 {
+   font-size: 1.125rem;
+   margin: 4rem 0 1rem;
+   font-weight: bold;
+}
+.content-1, .content-2, .content-3{
+    margin: 1rem 1rem;
+}
+.boo{
+    background-color:dimgray;
+    color: white;
+    font-size: 1.2rem;
+    padding: 50px 20px;
+    font-weight: bold;
+    text-align: center; 
+    margin-top: 3rem;
+}
+.line{
+    border-bottom: 1px solid #D3D3D3;
+    padding-bottom: 30px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.article-image{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+@charset "UTF-8";
+
+/*!
+ * animate.css -https://daneden.github.io/animate.css/
+ * Version - 3.7.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2019 Daniel Eden */
+ /*  animation credit: https://daneden.github.io/animate.css/ */
+ @keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.heartBeat  {
+  -webkit-animation-name: heartBeat;
+  animation-name: heartBeat;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.button:before,
+.button:after{
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: #fc2e5a;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.button:after{
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+/* responsive */
+@media screen and (min-width: 35rem){
+    body{
+        font-size: 1rem;
+        line-height: 1.5;
+        }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.26rem;
+        line-height: 2;
+        font-weight: bold;
+        margin:  1rem 1rem;
+    }
+    p {
+       margin: 1rem 1rem;
+
+    }
+    .navigation ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navigation li{
+        width: 100%;
+    }
+    .line{
+        border-bottom: 1px solid #FFFF12;
+        padding-bottom: 30px;
+        width: 90%;
+        margin: 2rem;
+    }
+   .content-1, .content-2, .content-3{
+       
+        margin: 0 auto;
+        max-width: 25rem;
+    }
+    .boo{
+        font-size: 1.6rem;
+      
+    }
+    .article-image{
+        float: left;
+        width: 50%;
+        margin: 0 1rem 1rem;
+    }
+}
+
+@media screen and (min-width: 80rem){
+    body{
+        font-size: 1rem;
+        line-height: 1.5;
+        }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.7;
+        font-weight: bold;
+        margin:  1rem 1rem;
+    }
+    p {
+       margin: 1rem 1rem;
+       text-align: left;
+    }
+    .content-1, .content-2, .content-3, .line{
+        max-width: 80rem;
+        margin: 0 24rem;
+    }
+   
+    
+    .center{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 0 auto;
+    }
+     .article-image{
+        width: 24%;
+    }
+    .boo{
+        font-size: 2rem;
+        margin: 2rem;
+    }
+
+}
